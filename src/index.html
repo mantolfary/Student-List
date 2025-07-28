@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student-List-Manager</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-gradient-to-r from-blue-50 to-purple-50 flex items-center justify-center min-h-screen"
+  >
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-2xl">
+      <h1 class="text-2xl font-bold mb-4 flex items-center text-black">
+        <span class="mr-2">🎓</span> Student List Manager
+      </h1>
+      <div class="mb-4">
+        <div class="flex space-x-2 mb-2">
+          <input
+            id="studentName"
+            type="text"
+            placeholder="Student Name"
+            class="border p-2 rounded-2xl w-1/3 text-gray-700"
+          />
+          <input
+            id="studentGrade"
+            type="text"
+            placeholder="Grade (A, B, C...)"
+            class="border p-2 rounded-2xl w-1/3 text-gray-700"
+          />
+          <button
+            id="addStudent"
+            class="bg-blue-500 text-white p-2 rounded-2xl w-1/3 hover:bg-blue-600"
+          >
+            + Add Student
+          </button>
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="flex space-x-2">
+          <input
+            id="filterGrade"
+            type="text"
+            placeholder="Filter by Grade"
+            class="border p-2 rounded-2xl w-3/2 text-gray-700"
+          />
+          <button
+            id="filter"
+            class="bg-purple-500 text-white p-2 rounded-2xl w-1/4 hover:bg-purple-600"
+          >
+            Filter
+          </button>
+          <button
+            id="reset"
+            class="bg-gray-300 text-black p-2 rounded-2xl w-1/4 hover:bg-gray-400"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+      <div id="studentList" class="mb-4">
+        <h2 class="text-lg font-semibold mb-2 text-gray-700">📑 Students</h2>
+        <div id="studentsDisplay" class="grid grid-cols-2 gap-5"></div>
+      </div>
+      <p id="totalStudents" class="text-sm text-gray-600">Total Students: 2</p>
+    </div>
+
+    <script src="./script/main.js"></script>
+  </body>
+</html>
